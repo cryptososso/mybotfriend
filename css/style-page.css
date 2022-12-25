@@ -30,6 +30,11 @@
    margin: auto;
  }
 
+ .flow{
+   display: grid;
+   gap: 10px;
+ }
+
  /*nav*/
  .main-nav{
    display: flex;
@@ -162,10 +167,10 @@
 }
 
 .advantages .box .boxes{
-   background: #434242;
-   color: #fff;
+   background: transparent;
+   color: #262626;
    padding: 15px 20px;
-   border: none;
+   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
    border-radius: 10px;
 }
 
@@ -216,8 +221,6 @@
 }
 
 
-
-
 .feature .feature-box .features-boxes img{
    width: 100%;
    height: 175px;
@@ -234,6 +237,135 @@
 .feature .feature-box .features-boxes p{
    text-align: center;
 }
+
+/*testimonial*/
+.testimonial{
+   margin-top: 35px 0;
+   margin-bottom: 50px;
+}
+
+.testimonial h2{
+   text-align: center;
+   margin-bottom: 20px;
+   padding-bottom: 20px;
+}
+
+.carousel{
+   position: relative;
+   width: 80%;
+   height: 320px;
+   margin: 0 auto;
+}
+
+.carousel__slide{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   height: 300px;
+   margin: 0 auto;
+   margin-bottom: 10px;
+   padding: 20px 35px;
+   box-shadow:rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+   border: 1px solid #262626;
+   border-radius: 10px;
+   text-align: justify;
+}
+
+.carousel__slide p{
+   font-size: 18px;
+   margin-bottom: 15px;
+}
+
+.carousel__slide .profile{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.carousel__slide .profile img{
+   width: 70px;
+   height: 70px;
+   margin-right: 10px;
+   border-radius: 50%;
+}
+
+.carousel__slide .profile span{
+   font-size: 18px;
+   font-weight: 700;
+}
+
+.carousel__track-container{
+   height: 100%;
+   position: relative;
+   overflow: hidden;
+}
+
+.carousel__track{
+   padding: 0;
+   margin: 0;
+   position: relative;
+   height: 100%;
+   transition: transform 300ms ease-in;
+}
+
+.carousel__button{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background: transparent;
+   border: 0;
+}
+
+.carousel__button--left{
+   left: -60px;
+   cursor: pointer;
+}
+
+.carousel__button--right{
+   right: -50px;
+   cursor: pointer;
+}
+
+.carousel__button .right-arrow{
+   width: 35px;
+}
+
+.carousel__button img{
+   width: 50px;
+   height: 50px;
+}
+
+.carousel__nav{
+   display: flex;
+   justify-content: center;
+   padding: 10px 0;
+}
+
+.carousel__indicator{
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.carousel__indicator.current-slide{
+   background-color:  rgba(0, 0, 0, 0.75);
+}
+
+.is-hidden{
+   display: none;
+}
+ 
+
+
+
 
 
 
